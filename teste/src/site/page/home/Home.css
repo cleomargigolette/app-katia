@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+/*Home*/
+.imgHome{
+    transition: all 1s;
+    animation-name: animacaoApareceDireita;
+    animation-duration: 1s;
+    width: 100%;
+ }
+ 
+ .sectionHome{
+    display: flex;
+    display: -webkit-box-flex;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box-flex;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex; 
+    justify-content: center;
+    align-items: center; 
+    font-family:'Poppins', cursive;
+    width: 100%;
+    margin-bottom: 3%;
+ }
+ 
+ .sectionHome div h1 {
+    animation-name: animacaoBolada;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin: 1%;
+    width: 100%;
+    color: #c06014;
+    font-size: 60px;  
+}
+ 
+ 
+ .sectionHome div p {
+    margin: 1%;
+    color: #727272;
+    font-size: 20px;
+    background-color: #eddbcd;
+    border-radius: 5px;
+ }
+
+ .sectionHome div a label{
+    width: 100%;
+ }
+
+ .imgSectionHome{
+    margin-left: 5%;
+ }
+ 
+ .sectionHome div{
+    transition: all 1s;
+    animation-name: animacaoApareceEsquerda;
+    animation-duration: 1s;
+ }
+
+button{
+   margin: 2%;
+   background-color: #c06014;
+   width: 50%;
+   height: 50px;
+   border-radius: 5px;
+   font-family:'Anton', sans-serif;
+   color: #fff;
+   font-size: 25px;
+   cursor: pointer;
+}
+
+button:hover{
+   color: #eddbcd;
+}
+
+
+ @media screen and (max-width:780px){
+  /*Home*/
+  .nomeEmpresa{
+   bottom: 454px;
+   right: 5%;
+   font-size: 9px;
+ }
+
+   .sectionHome{
+      flex-direction: column;
+   }
+
+   .sectionHome div h1 {
+     font-size: 40px;
+     line-height: 1.6;
+  }
+
+   .sectionHome div p {
+     margin: 1%;
+     font-size: 18px;
+  }
+
+  .sectionHome div{
+     width: 100%;
+     margin: 2%;
+  }
+}
+
+/*Animações*/
+@keyframes animacaoBolada {
+   0%   { 
+      text-shadow: 5px 5px 5px #0c0c0c;
+   }
+   25%  { text-shadow: 5px 5px 5px #9ea07a;}
+   50%  { text-shadow: 5px 5px 5px #292525; }
+   75%  { text-shadow: 5px 5px 5px #9ea07a;}
+   100% { 
+      text-shadow: 5px 5px 5px #5a5555;
+   }
+}
+
+@keyframes animacaoApareceEsquerda {
+   0%   { 
+      margin-left: -500%;
+   }
+   100% { 
+      margin-left: 0%;
+   }
+}
+
+@keyframes animacaoApareceDireita {
+   0%   { 
+      margin-right: -500%;
+   }
+   100% { 
+      margin-left: 0%;
+   }
+}
+
+.animacaoDireita{
+   animation-name: animacaoApareceDireita;
+   animation-duration: 1s;
+}
+
+.animacaoEsquerda{
+   animation-name: animacaoApareceEsquerda;
+   animation-duration: 0.1s;
+}

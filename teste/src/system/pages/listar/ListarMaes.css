@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.containerPrincipal{
+    background-color: #f1eff8;
+}
+
+.welcome{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Anton';
+    color: #c06014;
+    font-size: 10px;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+
+}
+
+.welcome img{
+    padding: 0%;
+    margin: 0%;
+    width:3%;
+    margin-top: 1%;
+}
+
+.welcome h1{
+    padding: 0%;
+    margin: 0%;
+    margin-top: 1%;
+}
+    
+.listar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #d8d8dd;
+    color: rgb(80, 80, 77);
+    font-family:'Poppins', cursive;
+    font-size: 18px;
+    list-style-type: none;
+    height: 45px;
+}
+.listar li{
+    width: 25%;
+    text-align: left;
+}
+
+.saibaMais{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    outline: none;
+    font-family:'Anton', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    background-color: #c06014;
+    text-decoration: none;
+    color: #f1eff8;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.saibaMais label{
+    cursor: pointer;
+}
+
+.buttonVoltarInfo{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    outline: none;
+    font-family:'Anton', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    background-color: #c06014;
+    text-decoration: none;
+    color: #f1eff8;
+    width: 20%;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.buttonAtualizar{
+    cursor: pointer;
+    outline: none;
+    font-family:'Anton', sans-serif;
+    font-size: 24px;
+    background-color: #c06014;
+    color: #f1eff8;
+    border-radius: 5px;
+    padding: 0% 5% 0% 5%;
+}
+
+.seguroDesemprego{
+    width: 30% !important;
+}
+
+#checkModalMae{
+    display: none;
+}
+
+#checkModalMae:checked ~ .modal{
+    display: block;
+}
+
+#checkModalEndereco{
+    display: none;
+}
+
+#checkModalEndereco:checked ~ .modal{
+    display: block;
+}
+
+#checkModalEmpresa{
+    display: none;
+}
+
+#checkModalEmpresa:checked ~ .modal{
+    display: block;
+}
+
+#checkModalFilho{
+    display: none;
+}
+
+#checkModalFilho:checked ~ .modal{
+    display: block;
+}
+
+#checkModalProcesso{
+    display: none;
+}
+
+#checkModalProcesso:checked ~ .modal{
+    display: block;
+}
+
+.modal{
+    z-index: 5;
+    padding: 1%;
+    display: none;
+    background-color: black;
+    opacity: 90%;
+    border-radius: 5px;
+}
+
+.modal div{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.modal div label{
+    text-align: left;
+    width: 30%;
+    color: #fff;
+    font-family:'Poppins', cursive;
+    font-size: 18px;
+    margin-left: 1%;
+}
+
+.modal div input,select{
+    width: 60%;
+    color: black;
+    font-family:'Poppins', cursive;
+    font-size: 18px;
+    margin-left: 1%;
+    outline: none;
+    margin: 1%;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputDate{
+    width: 30% !important;
+}
+
+.linkPerfil{
+    outline:none;
+    text-decoration: none !important;
+}
+
+.buttonModal{
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+
+.buttonModal button{
+    width: 30%;
+    outline: none;
+    margin: 0%;
+}
+
+.reseteButtonModal{
+    background-color: transparent !important;
+    text-align: center !important;
+    font-family:'Anton', sans-serif !important;
+    font-size: 24px !important;
+    border: 0px;
+    margin: 0%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.reseteButtonModal:hover{
+    cursor: pointer;
+    
+    background-color:#c06014 !important;
+}
+
+@media screen and (max-width:780px){
+
+    .listar{
+        flex-direction: column;
+        width:auto;
+        height: auto;
+        padding: 0%;
+    }
+    .listar li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .saibaMais{
+        width: 90%;
+    }
+
+    .welcome{
+        justify-content: center;
+    }
+
+    .welcome img{
+        width:8%;
+    }
+
+    .modal{
+        width: 100%;
+        left: 0%;
+        top :0%;
+    }
+
+    .modal div{
+        flex-direction: column;
+        
+    }
+
+    .modal div label{
+        width: 100%;
+        text-align:center;
+        font-size: 18px;
+    }
+
+    .modal div input,select{
+        width: 90%;
+        font-size: 13px;
+        margin: .5%;
+    }
+
+    .buttonModal button{
+        width: 90% !important;
+        outline: none !important;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .inputDate{
+        width: 90% !important;
+    }
+
+    .reseteButtonModal{
+        margin: 2%;
+        width: 90% !important;
+        background-color:#c06014 !important;
+    }
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/*Contato*/
+.sectionContato{
+   background-color: #c06014;
+   color: #eddbcd;
+   font-family:'Poppins', cursive;   
+   display: flex; 
+   flex-direction: column;
+   width: 100%;
+   margin-top: 5%;
+}
+
+.sectionContato h1{
+   font-size: 30px;
+}
+
+.sectionContato p{
+   font-size: 22px;
+}
+
+.redesSociais{
+   position: relative;
+   display: block;
+   width: 100%;
+   height: 130px;  
+}
+
+.whats{
+   display: block;
+   position: absolute;
+   top: 2%;
+   left: 45%;
+   width: 8%;
+}
+
+.face{
+   display: block;
+   position: absolute;
+   top: 2%;
+   left: 15%;
+   width: 8%;
+}
+
+.insta{
+   display: block;
+   position: absolute;
+   top: 2%;
+   right: 15%;
+   width: 8%;
+}
+
+.redesSociais div img:hover{
+   cursor: pointer;
+}
+
+.contatoFooter{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: #fff;
+   width: 100%; 
+}
+
+.contato{
+   display: flex;
+   width: 100%;
+}
+
+.contato div{
+   margin: 5%;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.contato div img{
+   height: 54px;
+}
+
+.contato div p{
+   color:#727272;
+}
+
+.logoContato{
+   margin:5%;
+   width: 20%;
+}
+
+.logoContato img{
+   width: 100%;
+}
+@media screen and (max-width:780px){
+
+   /*Contato*/
+   .sectionContato h1{
+      font-size: 20px;
+      margin-top: 5%;
+   }
+
+   .sectionContato p{
+      font-size: 18px;
+      margin-bottom: 5%;
+   }
+
+   .whats{
+      display: block;
+      position: absolute;
+      top: 15%;
+      left: 40%;
+      width: 15%;
+   }
+   
+   .face{
+      display: block;
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      width: 15%;
+   }
+   
+   .insta{
+      display: block;
+      position: absolute;
+      top: 15%;
+      right: 5%;
+      width: 15%;
+   }
+
+   .contatoFooter{
+      width: 100%;
+      flex-direction: column;
+   }
+
+   .contato{
+      flex-direction: column;
+   }
+
+   .contato div{
+      margin: 4% 0% 0% 0% ;
+      flex-direction: column;
+      width: 100%;
+   }
+   
+   .contato div img{
+      height: 40px;
+   }
+
+   .logoContato{
+      margin: 0%;
+      width: 100%;
+      align-items: center;
+   }
+
+   .logoContato img{
+      width: 32%;
+   }
+}

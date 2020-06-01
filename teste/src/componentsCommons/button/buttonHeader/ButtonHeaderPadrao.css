@@ -1,0 +1,37 @@
+.buttonHeaderPadrao{
+    transition: 1s;
+    outline: none;
+    font-family:'Anton', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    background-color: #c06014;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f1eff8;
+    width: 10%;
+    height: 45px;
+    margin-right: 1%;
+}
+
+.buttonHeaderPadrao a{
+    transition: 1s;
+    text-decoration: none;
+    color: #faf7f4;
+}
+
+
+.buttonHeaderPadrao:hover{
+    transition: 1s;
+    cursor: pointer;
+    padding: 0.5% 0% 0.5% 0%;
+}
+
+@media screen and (max-width:780px){
+    .buttonHeaderPadrao{
+        width: 20%;
+        margin-right:2%;
+    }
+    .buttonHeaderPadrao a{
+        font-size: 26px;
+     }
+}

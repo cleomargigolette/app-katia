@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.site{
+   font-family:'Poppins',cursive;
+}
+
+.divisaoSection{
+   width: 100%;
+   height: 80px;
+}
+
+hr{
+   background-color: #eddbcd;
+   width: 75%;
+   height: 1px;
+   margin-bottom: 3%;   
+}

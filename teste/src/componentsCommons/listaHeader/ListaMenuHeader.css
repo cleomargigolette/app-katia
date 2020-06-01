@@ -1,0 +1,31 @@
+.listaMenuHeader{
+    margin:1% ;
+    float: left;
+}
+
+.listaMenuHeader a{
+    text-decoration: none;
+    text-align: center;
+    color: #727272;
+}
+
+
+.listaMenuHeader a:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: #c06014;
+}
+
+@media screen and (max-width:780px){
+    .listaMenuHeader{
+        opacity: 85%;
+        background-color: #3d3838;
+        border: solid 1px;
+        border-radius: 5px;
+        width: 95%;
+    }
+    
+    .listaMenuHeader a{
+        color: #e6e1dd;
+    }
+}

@@ -1,0 +1,28 @@
+.logoHeader{
+    display: flex;
+    align-items: center;
+    width: 5%;
+    margin-left:2%;
+}
+
+.logoHeader a {
+    display:block;
+    width:100%;
+}
+
+.logoHeader a img{
+    width: 100%;
+}
+
+@media screen and (max-width:780px){
+
+    .logoHeader{
+        margin-left:-6%;
+    }
+
+    .logoHeader a img{
+        margin-top:50%;
+        width: 50px;
+        height: 50px;
+    }
+}

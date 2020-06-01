@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.formCadastro{
+    font-family: 'Poppins','cursive';
+    color: rgb(80, 80, 77);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: .4%;
+    padding: .4%;
+    width: 70%;
+    background-color: #f1eff8;
+    box-shadow: 9px -9px 11px #d3d2d6;
+    
+}
+
+.cadastro div{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+}
+
+select{
+    width: 100%;
+}
+
+.cadastro div input,select{
+    outline: none;
+    width: 60%;
+    padding: 1%;
+    margin: 1%;
+    font-size: 18px;
+    color: rgb(80, 80, 77);
+}
+
+.cadastro label{
+    margin-left: .5%;
+}
+
+.buttonForm{
+    margin-bottom: 0%;
+}
+
+@media screen and (max-width:780px){
+    .cadastro{
+        width:95%;
+        margin-top: 2%;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 15px #d3d2d6;
+    }
+
+    .cadastro div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cadastro div input,select{
+        width: 90%;
+    }
+
+    .cadastro div label{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,13 @@
+.nomeEmpresa{
+    background-color: #727272;
+    opacity: 90%;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    font-family:'Anton', sans-serif;
+    color: #faf7f4;
+    
+  }
+  .nomeEmpresa h1{
+    font-size: 30px;
+    margin: 0%;
+  }

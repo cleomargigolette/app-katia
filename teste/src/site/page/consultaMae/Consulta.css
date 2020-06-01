@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.consulta{
+    background:#f1eff8;
+    height: 100vh;
+}
+
+.info{
+    font-family:'Poppins',cursive;
+    color:#4d4949;
+    background:#f1eff8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    
+}
+
+.sectionMae{
+    background-color: #fff;
+    width: 75%;
+    border:solid 1px;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.infoMae{
+    display: flex;
+    justify-content: space-around;
+}
+
+.infoMae div{
+    width: 40%;
+    text-align: left;    
+}
+
+#loading{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+}
+
+
+
+@media screen and (max-width:780px){
+    .infoMae{
+        flex-direction: column;
+    }
+
+    .infoMae div{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .redesSociaisLogin{
+        display: none;
+    }
+
+}

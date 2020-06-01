@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+.headerSistema{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-family:'Anton', sans-serif;
+    font-size: 28px;
+}
+
+.headerSistema img{
+    width: 54px;
+    height: 54px;
+    padding: 1%;
+}
+
+.headerSistema div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    width: 80%;
+}
+
+.menuSistema{
+    transition: 1s;
+    cursor: pointer;
+    color: #727272;
+    text-decoration: none;
+}
+
+.menuSistema:hover{
+    transition: 1s;
+    color: #c06014;
+}
+
+.sairSistema{
+    transition: 1s;
+    outline: none;
+    font-family:'Anton', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    background-color: #c06014;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f1eff8;
+    width: 10%;
+    height: 45px;
+    margin-right: 1%;
+}
+
+.sairSistema:hover{
+    transition: 1s;
+    padding: .5% 0% .5% 0%;
+    cursor: pointer;
+}
+
+.permissao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+@media screen and (max-width:780px){
+    .headerSistema{
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        justify-content: space-around;
+        height: 70px;
+        
+    }
+
+    .headerSistema div{
+        margin-right: 5px;
+    }
+    
+    .headerSistema div label{
+        font-size: 22PX;
+    }
+
+    .permissao{
+        width: 100%;
+    }
+
+    .menuSistema{
+        display: none;
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.servico{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #c06014;
+}
+
+.apresentacaoServico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f1eff8;
+    
+}
+
+.apresentacaoServico h1{
+    color:#c06014;
+}
+
+
+.video{
+    width: 50%;
+    border-radius: 5px;
+    margin-top:3%;
+    margin-bottom: 3%;
+}
+
+.bannerServico{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color:#c06014;
+}
+
+.bannerServico img {
+    width: 50%;
+    margin: 2%;
+}
+
+.bannerServico div {
+    width: 50%;
+}
+
+.bannerServico div p{
+    color:#727272;
+}
+
+.titleServico h1{
+    color: #f1eff8;
+}
+
+
+@media screen and (max-width:780px){
+    .apresentacaoServico h1{
+        font-size: medium;
+    }
+
+    .video{
+        width: 96%;
+    }
+    
+    .bannerServico{
+        flex-direction: column;
+    }
+
+    .titleServico h1{
+        font-size: 20px;
+    }
+}
